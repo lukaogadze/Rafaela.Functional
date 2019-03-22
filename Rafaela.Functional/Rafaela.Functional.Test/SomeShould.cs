@@ -1,10 +1,6 @@
 ﻿using NUnit.Framework;
-using Shared;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Tests.Options
+namespace Rafaela.Functional.Test
 {
     [TestFixture]
     public class SomeShould

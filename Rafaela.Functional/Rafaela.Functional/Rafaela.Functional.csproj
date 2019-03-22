@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Luka Ogadze</Authors>
+    <Company>Rafaela</Company>
+    <Description>This is helper library for functional programming</Description>
+    <Copyright>Copyright (c) 2019 Rafaela</Copyright>
+    <PackageProjectUrl>https://github.com/lukaogadze/Rafaela.Functional</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lukaogadze/Rafaela.Functional</RepositoryUrl>
+    <PackageTags>Functional Programming</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

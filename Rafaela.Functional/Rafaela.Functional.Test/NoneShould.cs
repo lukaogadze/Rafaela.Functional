@@ -1,8 +1,7 @@
-using NUnit.Framework;
-using Shared;
 using System;
+using NUnit.Framework;
 
-namespace Tests.Options
+namespace Rafaela.Functional.Test
 {
     [TestFixture]
     public class NoneShould

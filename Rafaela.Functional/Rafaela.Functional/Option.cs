@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Shared
+﻿namespace Rafaela.Functional
 {
     public abstract class Option<T>
     {

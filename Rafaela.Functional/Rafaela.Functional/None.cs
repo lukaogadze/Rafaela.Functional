@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Shared
+namespace Rafaela.Functional
 {
     public sealed class None<T> : Option<T>
     {
