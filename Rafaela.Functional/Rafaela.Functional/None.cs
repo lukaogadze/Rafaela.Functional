@@ -2,6 +2,9 @@
 
 namespace Rafaela.Functional
 {
+    /// <summary>
+    /// The representation of "No value"
+    /// </summary>
     public sealed class None<T> : Option<T>
     {
         public override bool IsSome => false;

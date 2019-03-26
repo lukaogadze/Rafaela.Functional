@@ -1,5 +1,8 @@
 ﻿namespace Rafaela.Functional
 {
+    /// <summary>
+    /// The representation of "Value of type T"
+    /// </summary>
     public sealed class Some<T> : Option<T>
     {
         private readonly T _value;

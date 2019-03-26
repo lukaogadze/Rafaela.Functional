@@ -8,7 +8,7 @@ namespace Rafaela.Functional.Test
     {
         [Test]
         public void Return_True_On_IsNone()
-        {
+        {            
             var none = Option.None<string>();
 
             var actual = none.IsNone;
