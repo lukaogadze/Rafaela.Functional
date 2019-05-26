@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using Rafaela.Functional.Optionals.Fp;
 
-namespace Rafaela.Functional.Test
+namespace Rafaela.Functional.Test.Optionals.Fp
 {
     [TestFixture]
     public class SomeShould

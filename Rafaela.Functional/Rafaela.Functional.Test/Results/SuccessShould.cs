@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using Rafaela.Functional.Results;
 
-namespace Rafaela.Functional.Test
+namespace Rafaela.Functional.Test.Results
 {
     [TestFixture]
     public class SuccessShould
@@ -43,7 +44,7 @@ namespace Rafaela.Functional.Test
 
             var actual = success.ToString();
 
-            Assert.AreEqual($"Result of {typeof(string).Name}", actual);
+            Assert.AreEqual($"Successful Result of {typeof(string).Name}", actual);
         }
 
     }

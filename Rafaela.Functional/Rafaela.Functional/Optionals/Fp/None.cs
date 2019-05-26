@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace Rafaela.Functional
+namespace Rafaela.Functional.Optionals.Fp
 {
     /// <summary>
-    /// The representation of "No value"
+    /// The representation of 'No value'
     /// </summary>
     public sealed class None<T> : Option<T>
     {
@@ -11,7 +11,7 @@ namespace Rafaela.Functional
 
         public override bool IsNone => true;
 
-        public override T Value => throw new NullReferenceException("Option is None.");
+        public override T Value => throw new InvalidOperationException("Option is None.");
 
         public override string ToString()
         {

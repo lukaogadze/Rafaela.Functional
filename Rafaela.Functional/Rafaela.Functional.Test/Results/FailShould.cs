@@ -1,7 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
+using Rafaela.Functional.Results;
 
-namespace Rafaela.Functional.Test
+namespace Rafaela.Functional.Test.Results
 {
     [TestFixture]
     public class FailShould
@@ -27,11 +28,11 @@ namespace Rafaela.Functional.Test
         }
 
         [Test]
-        public void Raise_NullReferenceException_When_Accessing_Value()
+        public void Raise_InvalidOperationException_When_Accessing_Value()
         {
             var fail = Result.Fail<string>();
 
-            Assert.Throws<NullReferenceException>(() =>
+            Assert.Throws<InvalidOperationException>(() =>
             {
                 var data = fail.Value;
             });
@@ -44,7 +45,7 @@ namespace Rafaela.Functional.Test
 
             var actual = fail.ToString();
 
-            Assert.AreEqual($"Result of {typeof(string).Name}", actual);
+            Assert.AreEqual($"Failed Result of {typeof(string).Name}", actual);
         }
     }
 }

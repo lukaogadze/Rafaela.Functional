@@ -1,14 +1,15 @@
-using System;
 using NUnit.Framework;
+using Rafaela.Functional.Optionals.Fp;
+using System;
 
-namespace Rafaela.Functional.Test
+namespace Rafaela.Functional.Test.Optionals.Fp
 {
     [TestFixture]
     public class NoneShould
     {
         [Test]
         public void Return_True_On_IsNone()
-        {            
+        {
             var none = Option.None<string>();
 
             var actual = none.IsNone;
@@ -27,11 +28,11 @@ namespace Rafaela.Functional.Test
         }
 
         [Test]
-        public void Raise_NullReferenceException_When_Accessing_Value()
+        public void Raise_InvalidOperationException_When_Accessing_Value()
         {
             var none = Option.None<string>();
 
-            Assert.Throws<NullReferenceException>(() => 
+            Assert.Throws<InvalidOperationException>(() =>
             {
                 var data = none.Value;
             });

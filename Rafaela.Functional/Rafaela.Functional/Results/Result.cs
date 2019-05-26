@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
-
-namespace Rafaela.Functional
+﻿namespace Rafaela.Functional.Results
 {
     public abstract class Result<T>
     {
@@ -16,7 +13,7 @@ namespace Rafaela.Functional
         public abstract bool IsFailed { get; }
 
         /// <summary>
-        /// Get the value of a 'Success' result. A NullReferenceException is raised if the result is 'Fail'
+        /// Get the value of a 'Success' result. A InvalidOperationException is raised if the result is 'Fail'
         /// </summary>
         public abstract T Value { get; }
     }

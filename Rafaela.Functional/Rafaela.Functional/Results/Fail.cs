@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace Rafaela.Functional
+namespace Rafaela.Functional.Results
 {
     /// <summary>
-    /// The representation of "Failed result"
+    /// The representation of 'Failed result'
     /// </summary>
     public sealed class Fail<T> : Result<T>
     {
@@ -11,11 +11,11 @@ namespace Rafaela.Functional
 
         public override bool IsFailed => true;
 
-        public override T Value => throw new NullReferenceException("Result is Fail.");
+        public override T Value => throw new InvalidOperationException("Result is Fail.");
 
         public override string ToString()
         {
-            return $"Result of {typeof(T).Name}";
+            return $"Failed Result of {typeof(T).Name}";
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Rafaela.Functional
+﻿namespace Rafaela.Functional.Optionals.Fp
 {
     public abstract class Option<T>
     {
@@ -13,7 +13,7 @@
         public abstract bool IsNone { get; }
 
         /// <summary>
-        /// Get the value of a 'Some' option. A NullReferenceException is raised if the option is 'None'
+        /// Get the value of a 'Some' option. A InvalidOperationException is raised if the option is 'None'
         /// </summary>
         public abstract T Value { get; }
     }
